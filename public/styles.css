@@ -1,0 +1,126 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* margin-left: 400px; /* 2-inch margin on the left */
+    /* margin-right: 400px; 2-inch margin on the right */
+}
+
+header {
+    background: #f0f0f0;
+    padding: 10px 20px;
+    text-align: center;
+    margin-left: 50px; /* 2-inch margin on the left */
+    margin-right: 50px; /* 2-inch margin on the right */
+}
+
+header h1 {
+    font-family: 'Georgia', serif; /* Styling for header title */
+}
+
+header p {
+    font-family: 'Verdana', sans-serif; /* Specific font style for paragraph elements in the header */
+    text-align: left; /* Aligns text to the right */
+    margin-left: 250px; /* 2-inch margin on the left */
+    margin-right: 250px; /* 2-inch margin on the right */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px;
+    margin-left: 400px; /* 2-inch margin on the left */
+    margin-right: 400px; /* 2-inch margin on the right */
+}
+
+.image-gallery {
+    display: flex; /* This will lay out the .image-gallery children (the images) in a row */
+    justify-content: center; /* This will center the images horizontally */
+    align-items: center; /* This will center the images vertically */
+}
+
+.image-gallery img {
+    margin-right: 20px; /* This adds some space between the images */
+    width: auto; /* This maintains the image aspect ratio */
+    height: 300px; /* You can set the height to fit your design */
+    width: 400px;
+}
+
+/* If you want the last image not to have a margin on the right */
+.image-gallery img:last-child {
+    margin-right: 0;
+}
+
+.selected {
+    border: 5px solid green; /* Creates a green border around the selected image */
+    border-radius: 5px; /* Optional: Rounds the corners for a smoother halo effect */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background: #f0f0f0;
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #4CAF50; /* Change as needed */
+    color: white; /* Change as needed */
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+.submit-button:hover {
+    background-color: #45a049; /* Slightly darker shade for hover effect */
+}
+
+/* The base styles for the modal background */
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed position */
+    z-index: 1000; /* High z-index to be on top of other content */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.4); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Blur effect for the background */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.modal-content {
+    position: relative; /* This is crucial for the positioning of child elements using absolute positioning */
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Set a max-width for the content area */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    right: 10px;  /* Position from the right edge of .modal-content */
+    top: 10px;    /* Position from the top edge of .modal-content */
+    font-size: 24px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close:hover {
+    color: black;
+}
+
+/* Example styles for each design - Customize as needed */
+#popupA { color: yellow; }
+#popupB { color: blue; }
+#popupC { color: red; }
+#popupD { color: green; }
