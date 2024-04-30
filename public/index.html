@@ -11,18 +11,18 @@
 <body>
     <header>
         <h1>The Neighborhood Dog</h1>
-        <p>We’re reaching out to get your thoughts on which dog breeds you think are best suited for our neighborhood.
+        <p class="p-general">We’re reaching out to get your thoughts on which dog breeds you think are best suited for our neighborhood.
            Your input will help paint a clearer picture of how residents feel about various dog breeds, 
            especially those often considered potentially dangerous.</p>
     
-        <p>Please take a moment to share your views on which breeds you believe fit well into our local parks,
+        <p class="p-general">Please take a moment to share your views on which breeds you believe fit well into our local parks,
            streets, and communal areas, and which might not. This feedback is crucial for us to understand community preferences
            and ensure everyone feels safe and happy in our shared spaces.</p>
             
-        <p>Thank you for helping us make our neighborhood a better place for all residents and their furry friends!
+        <p class="p-general">Thank you for helping us make our neighborhood a better place for all residents and their furry friends!
            Your opinions are highly valued.</p>
-        <br>
-        <p>TASK: Which dog breed are you least comfortable with seeing in your neighborhood? 
+
+        <p class="p-general">TASK: Which dog breed are you least comfortable with seeing in your neighborhood? 
         Please click on one of the three images. </p>
 
     </header>
@@ -44,10 +44,19 @@
 <div id="popupA" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
-        <p>This is Design A</p>
-        <button class="btn-accept">Accept</button>
-        <button class="btn-decline">Decline</button>
-        <!-- Content for Design A -->
+        <div class="title-container">
+            <h2 class="h2-popup">Terms of Use</h2>
+        </div>
+        <p class="p-popup">In accordance with stipulated protocols, individuals accessing this digital interface shall, absent 
+            explicit repudiation, be deemed conscripted into a dual-pronged evaluative
+            mechanism, herein referred to as "A/B testing." This schema, designed for empirical optimization of user 
+            interface and operational functionality, mandates participation unless an affirmative disassociation is 
+            executed via the <a href="privacy_policy.html"> prescribed opt-out mechanism</a>. Such engagement must align strictly with the proscriptive 
+            parameters enshrined in the Website's prevailing privacy policy and terms of use.</p>
+        <div class="button-container">
+            <button class="btn-accept">Accept</button> <!-- Treated as Accept in Analytics -->
+            <button class="btn-decline"><a href="privacy_policy.html">Learn More</a></button> <!-- Treated as Decline in Analytics -->
+        </div>
     </div>
 </div>
 
@@ -55,10 +64,18 @@
 <div id="popupB" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
-        <p>This is Design B</p>
-        <button class="btn-accept">Accept</button>
-        <button class="btn-decline">Decline</button>
-        <!-- Content for Design B -->
+        <img src="img/dog_stop.png" alt="Descriptive Text" class="popup-image">
+        <div class="title-container">
+            <h2 class="h2-popup">Would you like to participate in an online experiment?</h2>
+        </div>
+        <p class="p-popup">In accordance with stipulated protocols, individuals accessing this digital interface shall, absent 
+            explicit repudiation, be deemed conscripted into a dual-pronged evaluative
+            mechanism, herein referred to as "A/B testing." This schema, designed for empirical optimization of user 
+            interface and operational functionality, mandates participation unless an affirmative disassociation is 
+            executed via the <a href="privacy_policy.html"> prescribed opt-out mechanism</a>. Such engagement must align strictly with the proscriptive 
+            parameters enshrined in the Website's prevailing privacy policy and terms of use.</p>
+        <button class="btn-accept"> Yes </button> <!-- Accept Button -->
+        <button class="btn-decline"> Maybe Later </button> <!-- Decline Button -->
     </div>
 </div>
 
@@ -66,10 +83,15 @@
 <div id="popupC" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
-        <p>This is Design C</p>
+        <div class="title-container">
+            <h2 class="h2-popup">Terms of Use</h2>
+        </div>
+        <p class="p-popup">When you use this website, you'll be automatically included in a process we call 'A/B testing,'
+        unless you choose not to participate. A/B testing helps us improve our website by testing different versions of it
+         to see which one works best. If you don't want to be part of this testing, you can opt out at any time by visiting
+          our <a href="privacy_policy.html"> privacy policy</a>.</p>
         <button class="btn-accept">Accept</button>
         <button class="btn-decline">Decline</button>
-        <!-- Content for Design C -->
     </div>
 </div>
 
@@ -77,10 +99,17 @@
 <div id="popupD" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
-        <p>This is Design D</p>
+        <img src="img/dog_stop.png" alt="Descriptive Text" class="popup-image">
+        <div class="title-container">
+            <h2 class="h2-popup">Would you like to participate in an online experiment?</h2>
+        </div>
+        <p class="p-popup">When you use this website, you'll be automatically included in a process we call 'A/B testing,'
+            unless you choose not to participate. A/B testing helps us improve our website by testing different versions of it
+            to see which one works best. If you don't want to be part of this testing, you can opt out at any time by visiting
+            our <a href="privacy_policy.html"> privacy policy</a>.</p>
         <button class="btn-accept">Accept</button>
         <button class="btn-decline">Decline</button>
-        <!-- Content for Design D -->
+        
     </div>
 </div>
 <script src="script.js"></script>
