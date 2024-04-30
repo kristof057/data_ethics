@@ -1,8 +1,7 @@
-let sessionId; // Declare sessionId variable in a higher scope
-
 document.addEventListener('DOMContentLoaded', function() {
+    
     // Generate a unique session ID
-    sessionId = generateSessionId();
+    let sessionId = generateSessionId();
 
     // Modify the Google Forms URL to include the session ID
     const surveyLink = document.getElementById('survey-link');
@@ -32,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             modalTag: modalTag, // Log which modal was shown
             sessionId: sessionId // Include session ID
         };
-        
+
         sendDataToServer(data); // Pass data to sendDataToServer
         modal.style.display = 'none'; // Close the modal
     };
@@ -48,6 +47,18 @@ document.addEventListener('DOMContentLoaded', function() {
             logEventAndCloseModal('Background Close', selectedModal);
         }
     };
+
+    // Event listeners for image selection
+    const images = document.querySelectorAll('.image-gallery img');
+    images.forEach(img => {
+        img.addEventListener('click', function() {
+            // Remove the "selected" class from all images
+            images.forEach(i => i.classList.remove('selected'));
+
+            // Add the "selected" class to the clicked image
+            this.classList.add('selected');
+        });
+    });
 });
 
 // Function to generate a unique session ID

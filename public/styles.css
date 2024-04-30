@@ -2,8 +2,6 @@ body, html {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* margin-left: 400px; /* 2-inch margin on the left */
-    /* margin-right: 400px; 2-inch margin on the right */
 }
 
 header {
@@ -18,11 +16,72 @@ header h1 {
     font-family: 'Georgia', serif; /* Styling for header title */
 }
 
-header p {
-    font-family: 'Verdana', sans-serif; /* Specific font style for paragraph elements in the header */
-    text-align: left; /* Aligns text to the right */
-    margin-left: 250px; /* 2-inch margin on the left */
-    margin-right: 250px; /* 2-inch margin on the right */
+h2 {
+    font-size: 25px;
+    text-align: left;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.title-container {
+    text-align: center;
+    color: black;
+    white-space: nowrap;
+    width: 100%; 
+}
+
+.h2-popup {
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.p-general { font-family: 'Verdana', sans-serif; 
+    text-align: justify;
+    margin-left: 250px; 
+    margin-right: 250px;
+    font-size: 16px;
+    color: #161111;
+    line-height: 1.5;
+    max-width: 1200px;
+}
+
+.p-popup {
+    text-align: justify;
+    font-size: 13px;
+    color: #747474;
+    padding: 15px;
+    border-radius: 7.5px;
+}
+
+.p-policy {
+    
+    font-size: 16px;
+    text-align: left;
+    color: #444;
+    line-height: 1.8;
+    max-width: 1000px;
+    margin: 20px 400px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.popup-image {
+    display: block;      /* Makes the image a block-level element */
+    margin: 10px auto;   /* Centers the image horizontally within its container */
+    max-width: 100%;     /* Ensures the image is responsive and does not overflow its container */
+    height: auto;        /* Keeps the image's aspect ratio */
 }
 
 main {
@@ -97,6 +156,7 @@ footer {
 }
 
 .modal-content {
+    text-align: center; 
     position: relative; /* This is crucial for the positioning of child elements using absolute positioning */
     background-color: #fefefe;
     padding: 20px;
@@ -120,7 +180,45 @@ footer {
 }
 
 /* Example styles for each design - Customize as needed */
-#popupA { color: yellow; }
+#popupA { color: rgb(150, 148, 148); }
 #popupB { color: blue; }
 #popupC { color: red; }
 #popupD { color: green; }
+
+.button-container {
+    text-align: center;
+}
+
+.btn-accept {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Larger padding for a bigger button */
+    font-size: 16px; /* Slightly larger font size */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor indicates clickable */
+    outline: none; /* Remove outline */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn-accept:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+.btn-decline {
+    background-color: #ccc; /* Grey background */
+    color: #333; /* Dark grey text */
+    padding: 10px 20px; /* Smaller padding for a smaller button */
+    font-size: 14px; /* Smaller font size */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor indicates clickable */
+    outline: none; /* Remove outline */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn-decline:hover {
+    background-color: #bbb;
+}
+
+
